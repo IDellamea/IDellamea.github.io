@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INDyTECH_WPF - Descarga 2.0</title>
+    <title>Descarga de Aplicación - Mi Proyecto</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -12,98 +12,99 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
-            color: #222;
+            background-color: #f4f7f6; /* Fondo más neutro */
+            color: #333; /* Color de texto principal oscuro */
             min-height: 100vh;
             margin: 0;
         }
         .card {
-            background: #fff;
-            border-radius: 18px;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
-            padding: 40px 32px 32px 32px;
+            background: #ffffff;
+            border-radius: 12px; /* Bordes más suaves */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Sombra más sutil */
+            padding: 35px 30px; /* Ajuste de padding */
             text-align: center;
-            max-width: 370px;
+            max-width: 400px; /* Ancho máximo ligeramente mayor */
             width: 90%;
-            animation: fadeIn 1.2s cubic-bezier(.39,.575,.565,1) both;
+            animation: fadeIn 1s ease-out; /* Animación más suave */
         }
         @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(40px);}
+            0% { opacity: 0; transform: translateY(30px);}
             100% { opacity: 1; transform: translateY(0);}
         }
         h1 {
-            color: #1a73e8;
-            margin-bottom: 18px;
-            font-size: 2.2rem;
+            color: #2c3e50; /* Color de título más sobrio */
+            margin-bottom: 15px;
+            font-size: 2rem; /* Tamaño de fuente ajustado */
             font-weight: 700;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
         }
         .subtitle {
-            color: #555;
-            font-size: 1.08rem;
-            margin-bottom: 28px;
+            color: #555e68; /* Color de subtítulo */
+            font-size: 1rem; /* Tamaño de fuente ajustado */
+            margin-bottom: 30px; /* Mayor espaciado */
             font-weight: 600;
+            line-height: 1.6;
         }
         .download-btn {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            background: linear-gradient(90deg, #1a73e8 0%, #4286f4 100%);
-            color: #fff;
-            padding: 16px 36px;
-            border-radius: 8px;
+            gap: 12px; /* Espacio entre icono y texto */
+            background-color: #3498db; /* Azul estándar */
+            color: #ffffff;
+            padding: 14px 30px; /* Padding ajustado */
+            border-radius: 6px; /* Bordes del botón */
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 16px rgba(26,115,232,0.10);
+            font-size: 1.05rem; /* Tamaño de fuente del botón */
+            box-shadow: 0 3px 10px rgba(52, 152, 219, 0.2);
             border: none;
-            transition: background 0.25s, transform 0.18s;
+            transition: background-color 0.2s ease-in-out, transform 0.15s ease-in-out;
             cursor: pointer;
         }
         .download-btn:hover {
-            background: linear-gradient(90deg, #1557b0 0%, #1a73e8 100%);
-            transform: translateY(-2px) scale(1.03);
+            background-color: #2980b9; /* Azul más oscuro al pasar el mouse */
+            transform: translateY(-2px);
         }
         .download-icon {
-            width: 22px;
-            height: 22px;
-            fill: #fff;
+            width: 20px; /* Tamaño del icono ajustado */
+            height: 20px;
+            fill: #ffffff;
         }
         .footer {
-            margin-top: 38px;
-            color: #888;
-            font-size: 0.98rem;
-            letter-spacing: 0.2px;
+            margin-top: 35px; /* Espaciado del footer */
+            color: #7f8c8d; /* Color de texto del footer */
+            font-size: 0.9rem; /* Tamaño de fuente del footer */
+            letter-spacing: 0.1px;
         }
         @media (max-width: 500px) {
             .card {
-                padding: 24px 8px 20px 8px;
+                padding: 25px 15px; /* Padding ajustado para móviles */
             }
             h1 {
-                font-size: 1.3rem;
+                font-size: 1.6rem; /* Tamaño de título para móviles */
             }
             .subtitle {
-                font-size: 0.98rem;
+                font-size: 0.9rem; /* Tamaño de subtítulo para móviles */
             }
             .download-btn {
-                font-size: 1rem;
-                padding: 12px 18px;
+                font-size: 0.95rem; /* Tamaño de fuente del botón para móviles */
+                padding: 12px 22px; /* Padding del botón para móviles */
             }
         }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>INDyTECH_WPF</h1>
-        <div class="subtitle">Descarga la última versión de nuestra aplicación de escritorio</div>
-        <a href="update/setup.exe" class="download-btn">
+        <h1>Nombre de la Aplicación</h1>
+        <div class="subtitle">Obtén la versión más reciente de nuestra increíble aplicación. ¡Descárgala ahora y disfruta de todas sus funcionalidades!</div>
+        <a href="update/INDyTECH_WPF.application" class="download-btn">
             <svg class="download-icon" viewBox="0 0 24 24">
-                <path d="M5 20h14a1 1 0 0 0 1-1v-2a1 1 0 1 0-2 0v1H6v-1a1 1 0 1 0-2 0v2a1 1 0 0 0 1 1zm7-3a1 1 0 0 0 1-1V7a1 1 0 1 0-2 0v9.59l-3.3-3.3a1 1 0 1 0-1.4 1.42l5 5a1 1 0 0 0 1.4 0l5-5a1 1 0 1 0-1.4-1.42L13 16.59V7a1 1 0 1 0-2 0v9a1 1 0 0 0 1 1z"/>
+                <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/> <!-- Icono de descarga alternativo -->
             </svg>
-            Descargar Aplicación
+            Descargar Ahora
         </a>
         <div class="footer">
-            &copy; 2024 INDyTECH_WPF &mdash; Todos los derechos reservados.
+            &copy; 2024 Nombre de Empresa &mdash; Todos los derechos reservados.
         </div>
     </div>
 </body>

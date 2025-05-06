@@ -4,43 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INDyTECH_WPF - Descarga 2.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Montserrat', Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            color: #222;
             min-height: 100vh;
             margin: 0;
-            background-color: #f0f2f5;
         }
-        .container {
+        .card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+            padding: 40px 32px 32px 32px;
             text-align: center;
-            padding: 20px;
+            max-width: 370px;
+            width: 90%;
+            animation: fadeIn 1.2s cubic-bezier(.39,.575,.565,1) both;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(40px);}
+            100% { opacity: 1; transform: translateY(0);}
         }
         h1 {
             color: #1a73e8;
-            margin-bottom: 30px;
+            margin-bottom: 18px;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            color: #555;
+            font-size: 1.08rem;
+            margin-bottom: 28px;
+            font-weight: 600;
         }
         .download-btn {
-            background-color: #1a73e8;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(90deg, #1a73e8 0%, #4286f4 100%);
+            color: #fff;
+            padding: 16px 36px;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            transition: background-color 0.3s;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 16px rgba(26,115,232,0.10);
+            border: none;
+            transition: background 0.25s, transform 0.18s;
+            cursor: pointer;
         }
         .download-btn:hover {
-            background-color: #1557b0;
+            background: linear-gradient(90deg, #1557b0 0%, #1a73e8 100%);
+            transform: translateY(-2px) scale(1.03);
+        }
+        .download-icon {
+            width: 22px;
+            height: 22px;
+            fill: #fff;
+        }
+        .footer {
+            margin-top: 38px;
+            color: #888;
+            font-size: 0.98rem;
+            letter-spacing: 0.2px;
+        }
+        @media (max-width: 500px) {
+            .card {
+                padding: 24px 8px 20px 8px;
+            }
+            h1 {
+                font-size: 1.3rem;
+            }
+            .subtitle {
+                font-size: 0.98rem;
+            }
+            .download-btn {
+                font-size: 1rem;
+                padding: 12px 18px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="card">
         <h1>INDyTECH_WPF</h1>
-        <a href="update/setup.exe" class="download-btn">Descargar Aplicación</a>
+        <div class="subtitle">Descarga la última versión de nuestra aplicación de escritorio</div>
+        <a href="update/setup.exe" class="download-btn">
+            <svg class="download-icon" viewBox="0 0 24 24">
+                <path d="M5 20h14a1 1 0 0 0 1-1v-2a1 1 0 1 0-2 0v1H6v-1a1 1 0 1 0-2 0v2a1 1 0 0 0 1 1zm7-3a1 1 0 0 0 1-1V7a1 1 0 1 0-2 0v9.59l-3.3-3.3a1 1 0 1 0-1.4 1.42l5 5a1 1 0 0 0 1.4 0l5-5a1 1 0 1 0-1.4-1.42L13 16.59V7a1 1 0 1 0-2 0v9a1 1 0 0 0 1 1z"/>
+            </svg>
+            Descargar Aplicación
+        </a>
+        <div class="footer">
+            &copy; 2024 INDyTECH_WPF &mdash; Todos los derechos reservados.
+        </div>
     </div>
 </body>
 </html>
